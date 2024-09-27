@@ -1,0 +1,23 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+    background-color: var(--subColor);
+}
+
+.body {
+    padding-top: 80px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doggo {
+    width: calc(100px + 20%);
+}
+
+.textBox {
+    width: 80%;
+    font-size: calc(10px + 1.5vw);
+}

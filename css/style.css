@@ -1,0 +1,242 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+}
+
+.header {
+    z-index: 999;
+    font-size: 18px;
+    position: fixed;
+    background: #fffcf8;
+    background-size: cover;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 3px #afaca8, 0 0 5px #afaca8;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pawLogo {
+    height: 50px;
+    margin-top: -11px;
+    margin-right: 5px;
+    /* this filters the svg to the color #a67c52*/
+    filter: invert(57%) sepia(5%) saturate(3860%) hue-rotate(349deg) brightness(89%) contrast(79%)
+}
+
+.ff-primary {
+    font-family: "Roboto", sans-serif;
+}
+
+.header a {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 10px;
+    margin-inline: calc(0.25vw + 10px);
+}
+
+.header .button {
+    border: none;
+    color: white;
+    background-color: var(--mainColor);
+    padding-bottom: 19px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    transition: 0.5s;
+}
+
+.header .button:hover {
+    color: black;
+}
+
+.dogPhoto img:hover {
+    opacity: 75%;
+}
+
+.blackTextBorder {
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.hoverElement {
+    cursor: pointer;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+.header ul {
+    float: right;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signinOverlay {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.signinBox {
+    padding: 40px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    width: 450px;
+    height: 75%;
+    min-height: 600px;
+    top: 12.5%;
+    margin: auto;
+    font-size: 30px;
+    background-color: var(--subColor);
+    border-radius: 5%;
+    align-content: center;
+}
+
+.signinBox .cuteDoggoIcon {
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    width: 33%;
+}
+
+.cuteDoggoIcon img {
+    width: 100%;
+}
+
+.exitButton {
+    height: 15px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.signinBox h1 {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+.footerContainer {
+    box-shadow: 0 0 3px #afaca8, 0 0 5px #afaca8;
+    background-color: #282424;
+    margin-top: 40px;
+    border-top: 2px;
+}
+
+.footerTextContainer {
+    font-size: calc(2vw + 5px);
+    color: #F3F3F3;
+}
+
+.contactUs {
+    padding: 20px;
+    font-size: 0.8em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(60vw + 50px);
+}
+
+.contactUs .alignRight {
+    width: 30%;
+    padding-left: 20%;
+    text-align: left;
+}
+
+.contactUs .alignLeft {
+    width: 50%;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.footerTextContainer .title {
+    text-align: center;
+}
+
+.footerContainer .logo {
+    background-color: #F3F3F3;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    align-items: auto;
+}
+
+.logo {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 35px;
+    display: inline-block;
+}
+
+.consultantList {
+    width: 9%;
+    margin-left: 2%;
+    margin-right: 2%;
+    aspect-ratio: 8/10;
+    margin: 20px;
+    background-color: #F3F3F3;
+    border-radius: calc(0.5vw + 10px);
+}
+
+.inputBox {
+    font-size: 20px;
+    color: #787878;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #F3F3F3;
+    border-radius: 6px;
+    height: fit-content;
+    border: 2px #afaca8 groove;
+}
+
+.hideDisplay {
+    display: none;
+}
+
+.header-button {
+    background-color: var(--subColor);
+    border-radius: 20px;
+}
+
+.account-button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+    border: solid 1px #787878;
+    background-image: url(../img/account.png);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,502 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+}
+
+.header {
+    z-index: 999;
+    font-size: 18px;
+    position: fixed;
+    background: #fffcf8;
+    background-size: cover;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 3px #afaca8, 0 0 5px #afaca8;
+    transition: 0.5s;
+}
+
+.covertextbox .logo {
+    display: inline-flex;
+    margin-left: -10px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.coverimg {
+    background: url("../img/doggo.jpg") top left no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+}
+
+
+.covertextbox {
+    transform: scaleX(-1);
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    padding: 35px 10% 10% 35px;
+    border-radius: 30px;
+}
+
+.covertextbox p {
+    font-size: calc(10px + 2vw);
+    margin-top: 20px;
+    color: black;
+}
+
+.content {
+    width: 100%;
+}
+
+.contentBox {
+    padding-left: calc(20px + 5vw);
+    padding-right: calc(20px + 5vw);
+    overflow: hidden;
+}
+
+.contentBox .textBox {
+    margin-top: 10px;
+    text-align: left;
+    color: black;
+    border-left: solid 4px var(--mainColor);
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.dogRun {
+    width: calc(40vw + 30px);
+}
+
+.dogRun img {
+    float: right;
+    width: 100%;
+}
+
+.contentBox .title {
+    align-self: center;
+    font-size: 3vw;
+    padding-left: 20px;
+}
+
+.contentBox .text {
+    font-size: 4.5vw;
+    margin-top: 2vh;
+    margin-bottom: 1.5vh;
+}
+
+.listContainer {
+    position: relative;
+    left: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+    width: 500.00%;
+    align-items: center;
+    background-color: var(--subColor);
+}
+
+.dogBox {
+    text-decoration: none;
+    color: #000000;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin-top: 10%;
+    margin-bottom: 5px;
+}
+
+.dogPhoto img:hover {
+    opacity: 75%;
+}
+
+.dogPhoto img {
+    max-height: 60%;
+}
+
+.dogList {
+    text-align: center;
+    font-size: 20px;
+    margin-inline: 0.5%;
+    width: 9%;
+    font-family: "Roboto", sans-serif;
+    background-color: #F3F3F3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.blackTextBorder {
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#alwaysSpin {
+    animation-name: spin;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hoverElement {
+    cursor: pointer;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+
+.listButton {
+    overflow: hidden;
+    background-color: #ffffff;
+    width: calc(30px + 2vw);
+    font-size: calc(5px + 1vw);
+    margin: 0 20px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listBox {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 5px;
+    background: var(--subColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.listBoxText {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.dogBox .dogPhoto {
+    /* display: none; */
+    width: 100%;
+    height: 70%;
+    background: white;
+    background-size: cover;
+}
+
+.dogPhoto img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.dogBox .dogName {
+    margin-top: 10px;
+}
+
+.header ul {
+    float: right;
+}
+
+#signinOverlay {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.signinBox {
+    padding: 40px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    width: 450px;
+    height: 75%;
+    min-height: 600px;
+    top: 12.5%;
+    margin: auto;
+    font-size: 30px;
+    background-color: var(--subColor);
+    border-radius: 5%;
+    align-content: center;
+}
+
+.signinBox .cuteDoggoIcon {
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    width: 33%;
+}
+
+.cuteDoggoIcon img {
+    width: 100%;
+}
+
+.exitButton {
+    height: 15px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.signinBox h1 {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+.footerContainer {
+    box-shadow: 0 0 3px #afaca8, 0 0 5px #afaca8;
+    background-color: #282424;
+    margin-top: 40px;
+    border-top: 2px;
+}
+
+.footerTextContainer {
+    font-size: calc(2vw + 5px);
+    color: #F3F3F3;
+}
+
+.footerTextContainer .title {
+    text-align: center;
+}
+
+.footerContainer .logo {
+    background-color: #F3F3F3;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    align-items: auto;
+}
+
+.logo {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 35px;
+    margin-top: -9px;
+    display: inline-block;
+}
+
+.consultantList {
+    width: 9%;
+    margin-left: 2%;
+    margin-right: 2%;
+    aspect-ratio: 8/10;
+    margin: 20px;
+    background-color: #F3F3F3;
+    border-radius: calc(0.5vw + 10px);
+}
+
+.inputBox {
+    font-size: 20px;
+    color: #787878;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #F3F3F3;
+    border-radius: 6px;
+    height: fit-content;
+    border: 2px #afaca8 groove;
+}
+
+.viewAllButton {
+    width: calc(50px + 10vw);
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ffdc84;
+    border: solid 1px black;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.sliderContainer {
+    overflow: hidden;
+    width: calc(100% - 140px - 5vw);
+}
+
+.informationBoxContainer {
+    margin-top: calc(0.25vw + 0.25vh + 10px);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.informationBox {
+    background-color: var(--subColor);
+    box-sizing: border-box;
+    width: 96%;
+    margin-top: calc(1.5vw);
+    border-radius: 1vw;
+    padding: 1.5vw;
+    font-size: calc(10px + 1vw);
+    display: flex;
+    align-items: center;
+}
+
+.doggoLogos {
+    width: 29%;
+    margin-right: 1%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+}
+
+.ib-textbox {
+    width: 70%;
+}
+
+.ib-dogfood {
+    background-image: url(../img/ib-dogfood.png);
+}
+
+.ib-doghealth {
+    background-image: url(../img/ib-doghealth.png);
+}
+
+.ib-dogshower {
+    background-image: url(../img/ib-dogshower.png);
+}
+
+.ib-doggrooming {
+    background-image: url(../img/ib-doggrooming.png);
+}
+
+.ib-dogexercise {
+    background-image: url(../img/ib-dogexercise.png);
+}
+
+.ib-dogtraining {
+    background-image: url(../img/ib-dogtraining.png);
+}
+
+@media (min-width:900px) {
+    .listContainer {
+        position: relative;
+        left: 0%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+        display: flex;
+        width: 250%;
+        align-items: center;
+    }
+
+    .informationBox {
+        width: 48%;
+    }
+
+    .coverimg {
+        display: flex;
+    }
+
+    .covertextbox {
+        margin-left: auto;
+        margin-right: 10%;
+    }
+}
+
+.dogList {
+    width: 23%;
+    margin-block: 10px;
+    background-color: white;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dogPhoto {
+    max-height: 60%;
+    margin-top: 10%;
+    background: transparent;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.dogName {
+    font-size: calc(15px + 1vw);
+    width: 60%;
+    text-align: center;
+}
+
+.cl-container {
+    width: calc(100% / 9);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: calc(10px + 0.5vw);
+}
+
+.cl-button {
+    background-color: var(--subColor);
+    padding: 10px;
+    border: solid 1px black;
+    margin-block: 5px;
+}
+
+.cl-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.cl-datas {
+    margin-block: 5px;
+}
+
+.consultantListContainer {
+    position: relative;
+    left: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+    width: 300.00%;
+    align-items: center;
+    background-color: var(--subColor);
+    justify-content: space-around;
+}
+
+@media (min-width:900px) {
+    .consultantListContainer {
+        width: 150%;
+    }
+}

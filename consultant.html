@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/consultantStyle.css">
+    <title>Consultant Chat</title>
+</head>
+
+<body>
+    <div class="topBar screen-padding">
+        <a href="index.html"><img src="img/left-arrow.svg" class="left-arrow"></a>
+        <div class="consultant-icon"></div>
+        <p id="consultant-name">Nama Konsultan</p>
+        <img src="img/video-icon.svg" class="video-icon clickable" onclick="showVideo()">
+    </div>
+    <div class="bottomBar screen-padding">
+        <textarea class="bb-chatbar"></textarea>
+        <img src="img/send-button.svg" class="send-button">
+    </div>
+</body>
+
+<div class="video-overlay" id="video">
+    <div class="call-bar screen-padding">
+        <div class="round-button-container push-left">
+            <img src="img/mic.svg" class="mic">
+        </div>
+        <div class="call-container clickable" onclick="hideVideo()">
+            <img src="img/call-button.svg" class="call-button" onclick="showVideo()">
+        </div>
+        <div class="round-button-container push-right">
+            <img src="img/video-icon.svg" class="mic">
+        </div>
+    </div>
+</div>
+
+</html>
+
+<script src="js/consultantchat.js"></script>
+<script>
+    function showVideo() {
+        document.getElementById("video").style.display = "block";
+    }
+    function hideVideo() {
+        document.getElementById("video").style.display = "none";
+    }
+</script>

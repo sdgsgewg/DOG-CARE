@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wikiStyle.css">
+    <title>Dog Wiki</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="index.html"><span style="color:white;" class="blackTextBorder">DOG</span>CARE</a>
+            </div>
+            <ul>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a class="header-button hide-loggedin" href="login.html">LOG IN</a>
+                <a class="header-button hide-loggedin" href="register.html">SIGN UP</a>
+                <a class="account-button show-loggedin" href="account.html"></a>
+            </ul>
+        </div>
+        <script src="js/accounthandler.js"></script>
+    </header>
+    <div class="contentBox" id="wikiContainer">
+        <div class="summaryFlex">
+            <div class="dogPicContainer">
+                <img src="img/cutedoggo.png" id="dogPic">
+            </div>
+            <div class="dogBio">
+                <div class="tagName" id="tagName">tagName</div>
+                <div class="dataList">
+                    <div class="dl-row">
+                        <div class="dataItems separator">Country of Origin</div>
+                        <div class="dataItems right separator" id="country">country</div>
+                    </div>
+                    <div class="dl-row">
+                        <div class="dataItems separator">Height</div>
+                        <div class="dataItems right separator" id="height">height</div>
+                    </div>
+                    <div class="dl-row">
+                        <div class="dataItems separator">Weight</div>
+                        <div class="dataItems right separator" id="weight">weight</div>
+                    </div>
+                    <div class="dl-row">
+                        <div class="dataItems">Life Span</div>
+                        <div class="dataItems right" id="lifeSpan">lifespan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentTitle" id="contentTitle1">contentTitle1</div>
+        <div class="hr"></div>
+        <div class="contentText" id="contentText1">contentText1<br>idk<br><br>second paragraph
+            <ul>myList
+                <li>one</li>
+                <li>two</li>
+            </ul>
+        </div>
+        <div class="contentTitle" id="contentTitle2">contentTitle2</div>
+        <div class="hr"></div>
+        <div class="contentText" id="contentText2">contentText2</div>
+        <div class="contentTitle hideDisplay" id="contentTitle3">contentTitle3</div>
+        <div class="hr hideDisplay" id="contentLine3"></div>
+        <div class="contentText hideDisplay" id="contentText3">contentText3</div>
+    </div>
+    <footer class="footerContainer">
+        <div class="logo"><a href="index.html"><span style="color:white;" class="blackTextBorder">DOG</span>CARE</a>
+        </div>
+        <div class="footerTextContainer">
+            <div class="title">Contact Us</div>
+            <div class="contactUs">
+                <div class="alignLeft">Email : dog.care@hmail.com</div>
+                <div class="alignRight">Business Hours : </div>
+                <div class="alignLeft">Whatsapp : +62 81234567890</div>
+                <div class="alignRight">Mon-Fri(8am-8pm)</div>
+                <div class="alignLeft">Instagram : @dog.care</div>
+                <div class="alignRight">Sat-Sun (Closed)</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="js/dogdata.js"></script>
+<script>
+    let tagName = getTagNameFromURL();
+    if (tagName)
+        insertWikiDataByIndex(tagName);
+</script>
+<script src="js/accounthandler.js"></script>

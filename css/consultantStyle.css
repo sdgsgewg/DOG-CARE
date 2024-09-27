@@ -1,0 +1,129 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+    background-color: white;
+}
+
+.topBar {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background-color: var(--subColor);
+    display: flex;
+    align-items: center;
+}
+
+.screen-padding {
+    padding-inline: calc(15px + 1vw);
+}
+
+.left-arrow {
+    width: 40px;
+}
+
+.consultant-icon {
+    margin-inline: calc(10px + 1vw);
+    background-image: url(../img/consultant.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-icon {
+    margin-left: auto;
+    width: 40px;
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: var(--subColor);
+    display: flex;
+    align-items: center;
+}
+
+.bb-chatbar {
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.send-button {
+    margin-left: auto;
+    width: 40px;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/video-overlay.png);
+    background-color: #96c0d8;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.call-button {
+    width: 40px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(104%);
+}
+
+.call-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-inline: 3%;
+    background-color: red;
+}
+
+.call-bar {
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    background-color: var(--subColor);
+    display: flex;
+    align-items: center;
+}
+
+.mic {
+    width: 30px;
+}
+
+.push-left{
+    margin-left: auto;
+}
+
+.push-right{
+    margin-right: auto;
+}
+
+.round-button-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.clickable{
+    cursor: pointer;
+}

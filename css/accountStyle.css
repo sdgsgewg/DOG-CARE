@@ -1,0 +1,81 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+    background-color: var(--subColor);
+}
+
+.body {
+    padding-top: 80px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-inline: calc(20px + 3vw);
+}
+
+.textBox {
+    width: 80%;
+    font-size: calc(10px + 1.5vw);
+}
+
+.vertical-content {
+    box-sizing: border-box;
+    padding: calc(5px + 0.75vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-collumn {
+    width: 40%;
+}
+
+.right-collumn {
+    width: 60%;
+}
+
+.brown-button {
+    background-color: #e8cc8c;
+    text-decoration: none;
+    color: black;
+    border-radius: calc(5px + 1vw);
+    padding: calc(5px + 0.5vw);
+    margin-inline: auto;
+}
+
+.green-button {
+    background-color: #809335;
+    text-decoration: none;
+    color: white;
+    border-radius: calc(5px + 1vw);
+    padding: calc(5px + 0.5vw);
+    margin-inline: auto;
+    width: 25%;
+    text-align: center;
+    user-select: none;
+}
+
+.text-size {
+    font-size: calc(10px + 1.5vw);
+}
+
+.profile-picture {
+    width: 70%;
+    margin-block: 10%;
+    aspect-ratio: 1/1;
+    background-image: url(../img/account.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container {
+    width: 90%;
+}
+
+.form-container p {
+    margin-block: 10px;
+}
+
+.inputBox {
+    color: black;
+}

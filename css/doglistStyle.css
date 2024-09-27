@@ -1,0 +1,73 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #FEEEC1;
+    background-color: var(--subColor);
+}
+
+.contentBox {
+    padding-top: 80px;
+    padding-inline: calc(30px + 5vw);
+    min-height: calc(100vh - 50px);
+}
+
+.listBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ff-default {
+    font-family: "Roboto", sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.listBoxText {
+    font-size: calc(10px + 3vw);
+}
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dogList {
+    width: 23%;
+    margin-block: 10px;
+    background-color: white;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dogPhoto {
+    max-height: 60%;
+    margin-top: 10%;
+    background: transparent;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.dogName {
+    font-size: calc(15px + 1vw);
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width:900px) {
+    .dogList {
+        width: 46%;
+    }
+}

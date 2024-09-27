@@ -1,0 +1,53 @@
+html {
+    --mainColor: #a67c52;
+    --subColor: #ffecbc;
+    background-color: #ffecbc;
+}
+
+.body {
+    padding-top: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doggo {
+    width: calc(100px + 30%);
+}
+
+.textBox {
+    padding-top: 20px;
+    width: 80%;
+    font-size: calc(10px + 1.5vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.brown-button {
+    background-color: #e8cc8c;
+    text-decoration: none;
+    color: black;
+    border-radius: calc(5px + 1vw);
+    padding: calc(5px + 0.5vw);
+    margin-inline: calc(10px + 2vw);
+}

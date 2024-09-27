@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Dog Care</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accountStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="index.html"><span style="color:white;" class="blackTextBorder">DOG</span>CARE</a>
+            </div>
+            <ul>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a class="header-button hide-loggedin" href="login.html">LOG IN</a>
+                <a class="header-button hide-loggedin" href="register.html">SIGN UP</a>
+                <a class="account-button show-loggedin" href="account.html"></a>
+            </ul>
+        </div>
+        <script src="js/accounthandler.js"></script>
+    </header>
+    <div class="body text-size">
+        <div class="left-collumn vertical-content">
+            <p>Profile Picture</p>
+            <div class="profile-picture"></div>
+            <a href="index.html" class="brown-button" onclick="logoutUser();">Log Out</a>
+        </div>
+        <div class="right-collumn vertical-content">
+            <p>Personal Information</p>
+            <div class="form-container">
+                <p>Full name</p>
+                <div class="inputBox">Budi Andi</div>
+                <p>Age</p>
+                <div class="inputBox">19</div>
+                <p>Gender</p>
+                <div class="inputBox">Male</div>
+                <p>Phone Number</p>
+                <div class="inputBox">081234567890</div>
+                <p>Email</p>
+                <div class="inputBox">budi.andi@gmail.com</div>
+                <br>
+                <div class="green-button hoverElement">Edit Profile</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footerContainer">
+    <div class="logo"><a href="index.html"><span style="color:white;" class="blackTextBorder">DOG</span>CARE</a></div>
+    <div class="footerTextContainer">
+        <div class="title">Contact Us</div>
+        <div class="contactUs">
+            <div class="alignLeft">Email : dog.care@hmail.com</div>
+            <div class="alignRight">Business Hours : </div>
+            <div class="alignLeft">Whatsapp : +62 81234567890</div>
+            <div class="alignRight">Mon-Fri(8am-8pm)</div>
+            <div class="alignLeft">Instagram : @dog.care</div>
+            <div class="alignRight">Sat-Sun (Closed)</div>
+        </div>
+    </div>
+</footer>
+
+</html>
+<script src="js/accounthandler.js"></script>
